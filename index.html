@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Student Enrollment Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+
+   
+        <div class="title">
+        <h1>Student Enrollment Form</h1>
+       </div>
+       <div class="content">
+             <form id="myForm">
+        <label for="name" class="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+        
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="web" placeholder="Website link"><br><br>
+
+     <label for="imageLink">Image Link:</label>
+    <input type="url" id="imageLink" name="imageLink" placeholder="Enter image URL"><br><br>
+
+
+        <div class="flex-container">
+            <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        </div>
+        <div class="flex-container">
+            
+          <label for="skills">Skills:</label>
+        <input type="checkbox" id="java" name="skills" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label><br><br>
+        </div>
+
+    <input type="submit" value="Enroll Student">
+
+          </form>
+    </div>
+     </div>
+     <div class="output-container">
+          <div id="output"></div>
+     </div>
+  
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
